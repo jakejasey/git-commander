@@ -47,6 +47,7 @@ async fn create_github_repo(token: &str, new_repo: NewRepo<'_>) -> Result<(), Bo
 }
 
 fn get_user_input(prompt: &str) -> String {
+    // Only really need it for this scope
     use std::io::{stdin, stdout, Write};
     let mut input = String::new();
     print!("{}", prompt);
